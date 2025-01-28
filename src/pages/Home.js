@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import UserCard from "../components/UserCard";
 import NavBar from "../components/NavBar";
+import { Outlet, useOutletContext } from "react-router-dom";
 
 function Home() {
   const [users, setUsers] = useState([]);
